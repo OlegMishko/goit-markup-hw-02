@@ -8,120 +8,226 @@
     --title-text-color: #212121;
     --accent-color:#2196F3;
     --primary-white-color: #ffffff;
+    --primery-background-color:#ffffff;
+    --logo-main-color:#000000;
+    --btn-main-color:#212121;
 }
 body {
     color: var(--primary-text-color);
-    background-color: var(--primary-white-color);
+    background-color: var(--primary-background-color);
     
     font-family:"roboto", sans-serif;
     letter-spacing: 0.03em;
-    
+}
+.list {
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+}
+/* -------------------HEADER---------------------- */
+
+.nav{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
-
-/* Logo */
 .logo {
-    color: var(--title-text-color);
-    font-weight: bold;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
-    text-decoration: none;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color:var(--logo-main-color);
 }    
 .logo-accent {
     color: var(--accent-color);
 }
-/* Site nav */
-.nav-list,
-.nav-link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    
-    
-    color: var(--title-text-color);
+
+.nav-link{
+    color: #212121;
 }
 .nav-link:hover,
 .nav-link:focus {
     color: var(--accent-color);
 }
-.nav-list, .current{
+.current{
     color: var(--accent-color);
 }
-
+/* ----TEL-MAIL---- */
 .header-tel,
 .header-mail{
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.19;
     letter-spacing: 0.02em;
+    /* text-transform: uppercase; */
+    color: inherit;
 
 }
-.header-tel:hover, 
-.header-tel:focus,
+.header-tel:hover,
+.header-tel:focus {
+    color: var(--accent-color);
+}
 .header-mail:hover,
 .header-mail:focus {
     color: var(--accent-color);
 }
-/* герой */
-.hero{
-    /* width: 1600px;
-    height: 600px;
-    left: 0px;
-    top: 80px; */
 
+/* -------------------HERO---------------------- */
+.hero{
 background: #2F303A;
 }
 .hero-title{
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--primary-white-color);
 
+    color: var(--primary-white-color);
 }
-.list {
-    list-style: none;
-}
-.btn{
+
+.hero-btn{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
-/* особенности */
-.title{
-    color: var(--title-text-color);
+/* -------------------benefits ---------------------- */
 
-}
-.subtitle{
+.benefits-subtitle{
+    font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
+    line-height: 1.14;
+    /* letter-spacing: 0.03em; */
     text-transform: uppercase;
+
     color: var(--title-text-color);
 }
+.benefits-text{
+    /* font-weight: 400; */
+    font-size: 14px;
+    line-height: 1.71;
+    /* letter-spacing: 0.03em; */
+}
+/* -------------------ABOUT ---------------------- */
+
+.about-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    /* letter-spacing: 0.03em; */
+
+    color: var(--title-text-color);
+}
+
+/* -------------------TEAM ---------------------- */
+/* team
+team-title
+team-list
+team-item
+team-item-subtitle
+team-item-text */
 .team{
     background: #F5F4FA;
 }
-/* footer */
+.team-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    /* letter-spacing: 0.03em; */
+
+    color:var(--title-text-color);
+}
+.team-item-subtitle{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    /* letter-spacing: 0.03em; */
+
+    color:var(--title-text-color);
+}
+.team-item-text{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    /* letter-spacing: 0.03em; */
+}
+
+/* -------------------FOOTER ---------------------- */
 .footer{
-    background: #2F303A;
+    background-color: #2F303A;
+}
+.address{
+    /* font-weight: 400; */
+    font-size: 14px;
+    line-height: 1.71;
+    /* letter-spacing: 0.03em; */
 }
 .address-text{
-    color: var(--primary-white-color);
+    color: #FFFFFF;
 }
-.address-link{
+.address-mail{
     color: rgba(255, 255, 255, 0.6);
-
 }
-/* для Портфолио */
+.address-tel{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* -------------------PORTFOLIO ---------------------- */
+/* -------------------FILTER ---------------------- */
+
 .button-filter{
-    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    cursor: pointer;
+    /* letter-spacing: 0.03em; */
+    color: var(--btn-main-color);
     background-color: #F5F4FA;
 }
 .button-filter:hover,
 .button-filter:focus{
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+}
+/* -------------------PROJECTS ---------------------- */
+/* projects
+projects-title
+projects-list
+projects-item 
+projects-subtitle
+projects-text
+*/
+.projects-subtitle{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+
+    color:var(--title-text-color);
+}
+.projects-text{
+    /* font-weight: 400; */
+    font-size: 16px;
+    line-height: 1.87;
+/* letter-spacing: 0.03em;
+color: #757575; */
 }
