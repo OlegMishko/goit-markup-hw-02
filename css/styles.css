@@ -10,6 +10,7 @@
     --primary-white-color: #ffffff;
     --primery-background-color:#ffffff;
     --logo-main-color:#000000;
+    --logo-footer-color:#FFFFFF;
     --btn-main-color:#212121;
 }
 body {
@@ -173,9 +174,23 @@ team-item-text */
 /* -------------------FOOTER ---------------------- */
 .footer{
     background-color: #2F303A;
+    
+}
+.logo-footer {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color:var(--logo-footer-color);
+}    
+.logo-accent {
+    color: var(--accent-color);
 }
 .address{
     /* font-weight: 400; */
+    font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     /* letter-spacing: 0.03em; */
@@ -194,6 +209,7 @@ team-item-text */
 /* -------------------FILTER ---------------------- */
 
 .button-filter{
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
